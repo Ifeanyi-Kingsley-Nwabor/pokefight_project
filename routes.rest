@@ -1,0 +1,28 @@
+GET http://localhost:3000
+
+###
+
+// get all pokemons
+GET http://localhost:3010/pokemon
+
+###
+
+// get one pokemon
+GET http://localhost:3010/pokemon/10
+
+###
+
+// get pokemon name
+GET http://localhost:3010/pokemon/10/name
+
+###
+
+// get pokemon type
+GET http://localhost:3010/pokemon/10/type
+
+###
+
+// get pokemon base
+GET http://localhost:3010/pokemon/10/base
+
+###
