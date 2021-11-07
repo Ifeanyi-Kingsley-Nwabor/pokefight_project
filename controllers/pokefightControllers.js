@@ -4,7 +4,7 @@ const data = require('../file.json');
 //const Game = require('../models/Game');
 
 const allPokemon = (req, res, next) => {
-    res.json(data)
+    res.json(data.pokemonData)
     }
 
 const onePokemon = async (req, res, next) => {
