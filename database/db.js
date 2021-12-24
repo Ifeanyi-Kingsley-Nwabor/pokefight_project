@@ -12,6 +12,6 @@ mongoose
 
 const db = mongoose.connection;
 
-client.on("error", (err) => console.log(err));
+db.on("error", (err) => console.log(err));
 
 module.exports = db;

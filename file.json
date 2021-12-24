@@ -239,7 +239,7 @@
             "base": {
                 "HP": 60,
                 "Attack": 45,
-                "Defense": 50,
+                "n": 50,
                 "Sp. Attack": 90,
                 "Sp. Defense": 80,
                 "Speed": 70
