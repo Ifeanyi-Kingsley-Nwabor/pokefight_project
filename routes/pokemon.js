@@ -8,7 +8,7 @@ const {
   postFightResult,
 } = require("../controllers/pokefightControllers");
 
-router.post("/fight/save", postFightResult);
+router.post("/game/save", postFightResult);
 
 /* GET home page. */
 router.get("/", allPokemon);

@@ -6,7 +6,7 @@ const data = require("./file.json");
 const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
-const { postFightResult } = require("./controllers/pokefightControllers");
+// const { postFightResult } = require("./controllers/pokefightControllers");
 
 const pokemonRouter = require("./routes/pokemon");
 
