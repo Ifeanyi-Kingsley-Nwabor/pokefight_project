@@ -3,8 +3,6 @@ const data = require("../file.json");
 const db = require("../database/db");
 const Game = require("../models/Game");
 
-//const Game = require('../models/Game');
-
 const allPokemon = (req, res, next) => {
   res.json(data.pokemonData);
 };
@@ -42,7 +40,7 @@ const postFightResult = async (req, res) => {
   const { pokemonA, pokemonB, winner } = req.body;
 
   try {
-    const newFightResult = await FightResult.create({
+    const newFightResult = await Game.create({
       pokemonA,
       pokemonB,
       winner,
@@ -51,7 +49,6 @@ const postFightResult = async (req, res) => {
   } catch (e) {
     res.status(500).send(e);
   }
-  // res.send("Hello Im the response");
 };
 
 module.exports = {
